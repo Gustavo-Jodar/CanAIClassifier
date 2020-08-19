@@ -9,13 +9,12 @@
 </head>
 <body>
 <div class="jumbotron">
-  <h1 class="display-4">Artificial intelligence to identify can brands through photos</h1>
+  <h1 class="display-4">Link to the AI program not created yet</h1>
 
-  <p class="lead">This AI uses the KNN (k-Nearst Neighbors) algorithm to classificate cans photos, it's very simple and sometimes even dump.
-    So, it helps if the photo has a white background, if you try to upload a photo of another thing, that is not a can, the AI will try to classificate it as a can.
+  <p class="lead"> The application is still on development.
   </p>
   <hr class="my-4">
-  <p>You can upload your can photo through the button bellow.</p>
+  <p>Changes will appear soon.</p>
   <hr class="my-4">
 </div>
 </body>
