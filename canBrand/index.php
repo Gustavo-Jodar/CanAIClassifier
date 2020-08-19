@@ -1,23 +1,3 @@
-<?php
-require_once  "vendor/samayo/bulletproof/src/bulletproof.php";
-
-$image = new Bulletproof\Image($_FILES);
-
-if($image["pictures"]){
-  $image->setLocation(__DIR__ . "/uploads");
-  $image->setSize(25000, 1000000);
-  $image->setMime(array('jpeg', 'jpg','png'));
-  $name = $image->getName();
-
-  $upload = $image->upload();
-  if($upload){
-    echo"<a class='btn btn-primary btn-lg' href='http://localhost/LatinhaIA/canBrand/?name=$name' role='button'>See the result!</a>";
-  }else{
-      echo $image->getError();
-  }
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,15 +17,6 @@ if($image["pictures"]){
   <hr class="my-4">
   <p>You can upload your can photo through the button bellow.</p>
   <hr class="my-4">
-
-  <form method="POST" enctype="multipart/form-data">
-  <div class='form-group'>
-    <input type="hidden" name="MAX_FILE_SIZE" value="1000000"/>
-    <input type="file" name="pictures" accept="image/*"/>
-    <input type="submit" value="upload photo"/>
-  </div>
-</form>  
-
 </div>
 </body>
 
