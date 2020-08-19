@@ -16,7 +16,7 @@
           <p>
             <?php 
               $image = $_GET['name'];
-              $resp = shell_exec("/home/gustavojodar/anaconda/bin/python3.8 /var/www/html/gj/CanAIClassifier/canBrand/IdentifyCan/IdentificaQuaseSnake.py $image 2>&1");
+              $resp = shell_exec("/home/gustavojodar/anaconda3/bin/python3.8 /var/www/html/gj/CanAIClassifier/canBrand/IdentifyCan/IdentificaQuaseSnake.py $image 2>&1");
               //$resp = shell_exec("/home/gustavo/miniconda3/bin/python3.7 /var/www/html/CanAIClassifier/canBrand/IdentifyCan/IdentificaQuaseSnake.py $image 2>&1");
               echo "<h1>The AI thinks that there is $resp</h1>";
             ?>
@@ -41,5 +41,5 @@
       </center>
     </div>
   </body>
-  
+
 </html>
