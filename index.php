@@ -11,7 +11,7 @@ if($image["pictures"]){
 
   $upload = $image->upload();
   if($upload){
-    echo"<a class='btn btn-primary btn-lg' href='http://scg-turing.ifsc.usp.br/LatinhaIA/canBrand/?name=$name' role='button'>See the result!</a>";
+    echo"<a class='btn btn-primary btn-lg' href='http://scg-turing.ifsc.usp.br/gj/CanAIClassifier/canBrand/?name=$name' role='button'>See the result!</a>";
   }else{
       echo $image->getError();
   }
