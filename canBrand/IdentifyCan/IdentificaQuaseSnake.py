@@ -25,7 +25,7 @@ def circle_points(resolution, center, radius):
 #carrega o nome da imagem passado como argumento
 image_name = sys.argv[1]
 
-image = io.imread("/var/www/html/CanAIClassifier/uploads/{}".format(image_name))
+image = io.imread("/var/www/html/gj/CanAIClassifier/uploads/{}".format(image_name))
 copy_image = image
 
 points = circle_points(200, [625, 625], 550)[:-1]
