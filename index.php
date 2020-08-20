@@ -60,7 +60,7 @@ if($image["pictures"]){
             The image that you upload in this site go to our database to continue to improve the AI.
           </p>  
           <p>
-            Desevolved by Gustavo Jodar
+            Developed by Gustavo Jodar
           </p>
         </footer>
     </center>
